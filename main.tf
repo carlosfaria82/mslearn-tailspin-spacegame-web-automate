@@ -5,6 +5,11 @@ terraform {
   }
 }
 
+provider "azurerm" {
+  version         = "> 0.12.0"
+  features {}
+}
+
 variable "resource_group_name" {
   default = "tailspin-space-game-rg"
   description = "The name of the resource group"
